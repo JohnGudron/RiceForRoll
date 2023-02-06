@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CookingInstructions"
+    android:background="@drawable/fon"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/little_rounded_corners"
+        android:text="Количество воды для варки риса"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/water_for_rice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/water_for_rice"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/little_rounded_corners"
+        android:hint="0 мл"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:background="@drawable/little_rounded_corners"
+        android:text="Количество уксуса для заправки"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/vinegar_for_dressing"
+        android:textColorHint="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="0 мл"
+        android:padding="5dp"
+        android:background="@drawable/little_rounded_corners"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/water_for_rice"
+        app:layout_constraintStart_toStartOf="@+id/water_for_rice"
+        app:layout_constraintTop_toBottomOf="@+id/water_for_rice" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Количество соли для заправки"
+        android:padding="5dp"
+        android:background="@drawable/little_rounded_corners"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/salt_for_dressing"
+        android:textColorHint="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:background="@drawable/little_rounded_corners"
+        android:hint="0 гр"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/vinegar_for_dressing"
+        app:layout_constraintStart_toStartOf="@+id/vinegar_for_dressing"
+        app:layout_constraintTop_toBottomOf="@+id/vinegar_for_dressing" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:text="Количество сахара для заправки"
+        android:padding="5dp"
+        android:background="@drawable/little_rounded_corners"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/sugar_for_dressing"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="8dp"
+        android:hint="0 гр"
+        android:padding="5dp"
+        android:background="@drawable/little_rounded_corners"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/salt_for_dressing"
+        app:layout_constraintStart_toStartOf="@+id/salt_for_dressing"
+        app:layout_constraintTop_toBottomOf="@+id/salt_for_dressing" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Количество воды для заправки"
+        android:padding="5dp"
+        android:background="@drawable/little_rounded_corners"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/water_for_dressing"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="0 мл"
+        android:padding="5dp"
+        android:background="@drawable/little_rounded_corners"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/sugar_for_dressing"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/sugar_for_dressing"
+        app:layout_constraintTop_toBottomOf="@+id/sugar_for_dressing" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="624dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
+        android:text="@string/recipe"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/water_for_dressing"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

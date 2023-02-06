@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/fon">
+
+    <TextView
+        android:id="@+id/rice_amount_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Введите количество сухого риса (в граммах)"
+
+        android:textColor="@color/black"
+        android:background="@drawable/little_rounded_corners"
+        android:padding="5dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/rice_amount_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:hint="грамм"
+        android:layout_marginVertical="8dp"
+        android:background="@drawable/little_rounded_corners"
+        android:padding="5dp"
+        android:inputType="number"
+        android:textColorHint="@color/hint"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/rice_amount_textView"
+        app:layout_constraintStart_toStartOf="@+id/rice_amount_textView"
+        app:layout_constraintTop_toBottomOf="@+id/rice_amount_textView" />
+
+    <TextView
+        android:id="@+id/vinegar_percent_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:text="Введите концентрацию уксуса, который будете использовать (в процентах)"
+        android:background="@drawable/little_rounded_corners"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/rice_amount_editText"
+        app:layout_constraintStart_toStartOf="@+id/rice_amount_editText"
+        app:layout_constraintTop_toBottomOf="@+id/rice_amount_editText" />
+
+    <EditText
+        android:id="@+id/vinegar_percent_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginVertical="8dp"
+        android:hint="@string/percent"
+        android:background="@drawable/little_rounded_corners"
+        android:padding="5dp"
+        android:textColorHint="@color/hint"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/vinegar_percent_textView"
+        app:layout_constraintStart_toStartOf="@+id/vinegar_percent_textView"
+        app:layout_constraintTop_toBottomOf="@+id/vinegar_percent_textView" />
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+
+        android:text="Рассчитать"
+        android:onClick="calculate"
+        app:layout_constraintEnd_toEndOf="@+id/vinegar_percent_editText"
+        app:layout_constraintStart_toStartOf="@+id/vinegar_percent_editText"
+        app:layout_constraintTop_toBottomOf="@+id/vinegar_percent_editText" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="584dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
